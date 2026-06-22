@@ -10,22 +10,21 @@ function App() {
   const router = createBrowserRouter([
     {
       path: "/",
-      element:<Home/>,
+      element:<><Navbar /> <Home/></>
     },
     {
       path: "/Login",
-      element:<Login/>,
+      element:<><Navbar /> <Login/></>
     },
     {
       path: "/About",
-      element:<About/>,
+      element:<><Navbar /> <About/></>
     },
   ])
   return(
     <>
     <Message/>
     <ListGroup/>
-    <Navbar/>
     <RouterProvider router={router} />
     </>
   );
